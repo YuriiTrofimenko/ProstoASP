@@ -2,12 +2,12 @@
 	<div class="row">
 		<div class="col"></div>
 		<div class="col-5" id="page-container">
-			 Зачем усложнять себе жизнь, если все можно просто поручить профи?.. 
+			 <!--Зачем усложнять себе жизнь, если все можно просто поручить профи?..--> 
 		</div>
 		<div class="col-6"></div>
 	</div>
 </div>
-<!--<script type="text/javascript">
+<script type="text/javascript">
 	app.handler(function() {
 
 		console.log('this ' + $(this));
@@ -18,13 +18,13 @@
 
 			$.ajax({
 				type: 'POST',
-				url: '/prostogae?action=get-data-by-section&section=home',
+                url: '/Default/DoAction?action=get-data-by-section&section=home',
 				//contentType: 'text/plain',
 				cache: false
 		  	}).done(function(responseText, textStatus, jqXHR) {
 				  //if got code 200
 				  if(responseText !== '' && responseText !== 'error'){
-					  
+
 						//
 						console.log(responseText.content);
 						//$('section#copyright p#p-content').text(responseText.content);
@@ -34,17 +34,17 @@
 						//var $container = $(this).find("section#copyright #page-container");
 					  	$container.html(template.render(responseText));
 				  } else {
-					  
+
 				  //
 				  }
 				  //stopLoadingAnimation();
 				  $(".loader").css("display", "none");
 		  	}).fail(function(jqXHR, textStatus, errorThrown) {
-				  
+
 				//if got code 404 or 500, etc.
 				//stopLoadingAnimation();
 				$(".loader").css("display", "none");
 		  	});
 	  	};
   	});
-</script>-->
+</script>

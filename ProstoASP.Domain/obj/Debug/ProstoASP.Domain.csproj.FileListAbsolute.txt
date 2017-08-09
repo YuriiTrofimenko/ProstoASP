@@ -2,3 +2,7 @@ C:\Repositories\ProstoASP\ProstoASP.Domain\bin\Debug\ProstoASP.Domain.dll
 C:\Repositories\ProstoASP\ProstoASP.Domain\bin\Debug\ProstoASP.Domain.pdb
 C:\Repositories\ProstoASP\ProstoASP.Domain\obj\Debug\ProstoASP.Domain.dll
 C:\Repositories\ProstoASP\ProstoASP.Domain\obj\Debug\ProstoASP.Domain.pdb
+D:\Repositories\ProstoASP\ProstoASP.Domain\bin\Debug\ProstoASP.Domain.dll
+D:\Repositories\ProstoASP\ProstoASP.Domain\bin\Debug\ProstoASP.Domain.pdb
+D:\Repositories\ProstoASP\ProstoASP.Domain\obj\Debug\ProstoASP.Domain.dll
+D:\Repositories\ProstoASP\ProstoASP.Domain\obj\Debug\ProstoASP.Domain.pdb

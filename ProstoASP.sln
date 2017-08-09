@@ -1,11 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.15
+VisualStudioVersion = 15.0.26403.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProstoASP.Domain", "ProstoASP.Domain\ProstoASP.Domain.csproj", "{5871A23A-CB85-4004-A3E0-D51E47D8A3EA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProstoASP.Web", "ProstoASP.Web\ProstoASP.Web.csproj", "{E3C4C901-378F-417D-AA46-91A71E849FF0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5871A23A-CB85-4004-A3E0-D51E47D8A3EA} = {5871A23A-CB85-4004-A3E0-D51E47D8A3EA}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
