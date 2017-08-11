@@ -127,3 +127,7 @@ D:\Repositories\ProstoASP\ProstoASP.Web\bin\ru\System.Web.Mvc.resources.dll
 D:\Repositories\ProstoASP\ProstoASP.Web\bin\ru\System.Net.Http.Formatting.resources.dll
 D:\Repositories\ProstoASP\ProstoASP.Web\bin\ru\System.Web.Http.resources.dll
 D:\Repositories\ProstoASP\ProstoASP.Web\bin\ru\System.Web.Http.WebHost.resources.dll
+D:\Repositories\ProstoASP\ProstoASP.Web\bin\Ninject.dll
+D:\Repositories\ProstoASP\ProstoASP.Web\bin\LiteDB.dll
+D:\Repositories\ProstoASP\ProstoASP.Web\bin\Ninject.xml
+D:\Repositories\ProstoASP\ProstoASP.Web\bin\LiteDB.xml

@@ -6,3 +6,12 @@ D:\Repositories\ProstoASP\ProstoASP.Domain\bin\Debug\ProstoASP.Domain.dll
 D:\Repositories\ProstoASP\ProstoASP.Domain\bin\Debug\ProstoASP.Domain.pdb
 D:\Repositories\ProstoASP\ProstoASP.Domain\obj\Debug\ProstoASP.Domain.dll
 D:\Repositories\ProstoASP\ProstoASP.Domain\obj\Debug\ProstoASP.Domain.pdb
+D:\Repositories\ProstoASP\ProstoASP.Domain\bin\Debug\LiteDB.dll
+D:\Repositories\ProstoASP\ProstoASP.Domain\bin\Debug\System.Web.Mvc.dll
+D:\Repositories\ProstoASP\ProstoASP.Domain\bin\Debug\System.Web.Razor.dll
+D:\Repositories\ProstoASP\ProstoASP.Domain\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Repositories\ProstoASP\ProstoASP.Domain\bin\Debug\System.Web.WebPages.dll
+D:\Repositories\ProstoASP\ProstoASP.Domain\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Repositories\ProstoASP\ProstoASP.Domain\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Repositories\ProstoASP\ProstoASP.Domain\bin\Debug\LiteDB.xml
+D:\Repositories\ProstoASP\ProstoASP.Domain\obj\Debug\ProstoASP.Domain.csprojResolveAssemblyReference.cache

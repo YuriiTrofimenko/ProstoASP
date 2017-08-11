@@ -12,11 +12,13 @@ namespace ProstoASP.Web.Controllers
     public class DefaultController : Controller
     {
         private IProjectRepository mRepository;
+        private String DB_PATH;
 
         public DefaultController(IProjectRepository _projectRepository)
         {
 
             mRepository = _projectRepository;
+            
         }
 
         // GET: Default
@@ -29,6 +31,7 @@ namespace ProstoASP.Web.Controllers
         public JsonResult DoAction()
         {
             dynamic result = new { };
+            DB_PATH = Server.MapPath("~/App_Data/");
             if (Request["action"] != null)
             {
                 String actionString = Request["action"];
@@ -41,30 +44,10 @@ namespace ProstoASP.Web.Controllers
                                 try
                                 {
                                     result =
-                                        mRepository.GetPageDataBySection(Request["section"]);
-                                }
-                                catch (Exception)
-                                {
-
-                                    result = new { error = "error" };
-                                }
-                            }
-                            break;
-                        }
-                    case "create-page-data":
-                        {
-                            if (Request["section"] != null
-                                && Request["title"] != null
-                                && Request["content"] != null)
-                            {
-                                PageData pageData = new PageData();
-                                pageData.section = Request["section"];
-                                pageData.title = Request["title"];
-                                pageData.content = Request["content"];
-                                try
-                                {
-                                    mRepository.SavePageData(pageData);
-                                    result = new { ok = "ok" };
+                                        mRepository.GetPageDataBySection(
+                                            Request["section"]
+                                            , DB_PATH
+                                        );
                                 }
                                 catch (Exception)
                                 {
