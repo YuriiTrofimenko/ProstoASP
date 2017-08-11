@@ -5,11 +5,20 @@ using System.Web;
 using System.Web.Mvc;
 
 using ProstoASP.Domain.Entity;
+using ProstoASP.Domain.Abstract;
 
 namespace ProstoASP.Web.Controllers
 {
     public class DefaultController : Controller
     {
+        private IProjectRepository mRepository;
+
+        public DefaultController(IProjectRepository _projectRepository)
+        {
+
+            mRepository = _projectRepository;
+        }
+
         // GET: Default
         public ActionResult Index()
         {
@@ -29,18 +38,39 @@ namespace ProstoASP.Web.Controllers
                         {
                             if (Request["section"] != null)
                             {
-                                PageData pageData =
-                                    new PageData(
-                                        "home"
-                                        , "Главная"
-                                        , "Зачем усложнять себе жизнь, если все можно просто поручить профи?.."
-                                    );
-                                result =
-                                    new {
-                                        id = pageData.getId()
-                                        , title = pageData.getTitle()
-                                        , content = pageData.getContent()
-                                    };
+                                try
+                                {
+                                    result =
+                                        mRepository.GetPageDataBySection(Request["section"]);
+                                }
+                                catch (Exception)
+                                {
+
+                                    result = new { error = "error" };
+                                }
+                            }
+                            break;
+                        }
+                    case "create-page-data":
+                        {
+                            if (Request["section"] != null
+                                && Request["title"] != null
+                                && Request["content"] != null)
+                            {
+                                PageData pageData = new PageData();
+                                pageData.section = Request["section"];
+                                pageData.title = Request["title"];
+                                pageData.content = Request["content"];
+                                try
+                                {
+                                    mRepository.SavePageData(pageData);
+                                    result = new { ok = "ok" };
+                                }
+                                catch (Exception)
+                                {
+
+                                    result = new { error = "error" };
+                                }
                             }
                             break;
                         }
